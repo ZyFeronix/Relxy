@@ -1,0 +1,37 @@
+# Normalize line endings on commit; the working tree may differ on Windows.
+* text=auto eol=lf
+
+# Text files that must stay LF
+*.go     text eol=lf
+*.md     text eol=lf
+*.yml    text eol=lf
+*.yaml   text eol=lf
+*.json   text eol=lf
+*.sh     text eol=lf
+*.service text eol=lf
+Dockerfile text eol=lf
+Makefile   text eol=lf
+.gitignore text eol=lf
+.gitattributes text eol=lf
+
+# Windows console scripts expect CRLF
+*.bat   text eol=crlf
+*.cmd   text eol=crlf
+*.ps1   text eol=crlf
+*.psm1  text eol=crlf
+
+# Binary files: never normalize or diff as text
+*.png   binary
+*.jpg   binary
+*.jpeg  binary
+*.gif   binary
+*.ico   binary
+*.webp  binary
+*.zip   binary
+*.gz    binary
+*.tar   binary
+*.exe   binary
+*.dll   binary
+*.so    binary
+*.dylib binary
+*.deb   binary
